@@ -1,1 +1,0 @@
-<p> Ceci est un test pour la page de contact</p>
