@@ -20,41 +20,56 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+    <nav class="navbar navbar-expand-lg p-3 mb-5">
 
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="<?php echo base_url('/')?>">Alexandra Desplan</a>
+            <a class="navbar-brand"
+                href="<?php echo base_url('/')?>">Alexandra Desplan</a>
 
             <!-- Bouton pour afficher le menu sur mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
 
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('formations')?>">Formations</a>
+                        
+                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill" 
+                           href="<?php echo base_url('formations')?>">Formations
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('experiences')?>">Expériences</a>
+                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
+                           href="<?php echo base_url('experiences')?>">Expériences
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('competences')?>">Compétences</a>
+                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
+                           href="<?php echo base_url('competences')?>">Compétences</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('projets')?>">Projets</a>
+                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
+                            href="<?php echo base_url('projets')?>">Projets</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('contacts')?>">Contacts</a>
+                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
+                            href="<?php echo base_url('contacts')?>">Contacts</a>
                     </li>
                 </ul>
             </div>
