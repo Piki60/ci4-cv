@@ -9,7 +9,7 @@
     </div>
     <div class="form-group">
 
-        <?php echo form_open('Contacts/save'); ?>
+        <?php echo form_open_multipart('Contacts/save'); ?>
 
         <div class="mb-3">
 
@@ -66,6 +66,17 @@
                 }
             ?>
         </div>
+
+        <div class="mb-3">
+            <label for="pieceJointe">Pièce Jointe</label>
+            <?php echo form_upload('pieceJointe', set_value('pieceJointe'), ['class' => 'form-control', 'id' => 'pieceJointe']); ?>
+            <?php
+                if (isset($validation) && $validation->hasError('pieceJointe')) {
+                    echo '<div class="alert alert-danger">' . $validation->getError('pieceJointe') . '</div>';
+                }
+            ?>
+        </div>
+
         
         <?php echo form_submit('submit', 'Envoyer', ['class' => 'btn btn-primary']); ?>
         <?php echo form_close(); ?>
