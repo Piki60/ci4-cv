@@ -21,7 +21,7 @@
 
 <body>
     
-    <nav class="navbar navbar-expand-lg p-3 mb-5">
+    <nav class="navbar navbar-expand-lg p-3 mb-5 bg-secondary text-white">
 
         <div class="container-fluid">
 
@@ -46,29 +46,29 @@
                     
                     <li class="nav-item">
                         
-                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill" 
+                        <a class="nav-link btn btn-outline-light rounded-pill"
                            href="<?php echo base_url('formations')?>">Formations
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
-                           href="<?php echo base_url('experiences')?>">Expériences
+                        <a class="nav-link btn btn-outline-light rounded-pill"
+                           href="<?php echo base_url('experiences')?>">Expériences professionnelles
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
+                        <a class="nav-link btn btn-outline-light rounded-pill"
                            href="<?php echo base_url('competences')?>">Compétences</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
+                        <a class="nav-link btn btn-outline-light rounded-pill"
                             href="<?php echo base_url('projets')?>">Projets</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-primary me-2 rounded-pill"
+                        <a class="nav-link btn btn-outline-light rounded-pill"
                             href="<?php echo base_url('contacts')?>">Contacts</a>
                     </li>
                 </ul>
