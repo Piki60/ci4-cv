@@ -1,7 +1,7 @@
 <div class="container">
-    <h1 class="title mb-5 display-4">
+    <h2 class="text-center mb-4 text-primary">
         Formations
-    </h1>
+    </h2
 
     <div class="col">
 
