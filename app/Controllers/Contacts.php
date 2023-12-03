@@ -28,7 +28,7 @@ class Contacts extends Controller
             'email' => 'required|valid_email',
             'sujet' => 'required|min_length[3]|max_length[20]',
             'message' => 'required|min_length[10]|max_length[1000]',
-            'pieceJointe' => 'uploaded[pieceJointe]|max_size[pieceJointe, 1024]|ext_in[pieceJointe,pdf,doc,docx,jpg,jpeg,png,gif,txt]'
+            'pieceJointe' => 'ext_in[pieceJointe,pdf,doc,docx,jpg,jpeg,png,gif,txt]'
         ]);
 
         //Si les données ne sont pas valides
@@ -61,7 +61,7 @@ class Contacts extends Controller
 
 
             //Si une pièce jointe a été ajoutée
-            if($data['pieceJointe'] != ''){
+            if($data['pieceJointe'] != '' || $data['pieceJointe'] != null){
 
                 $attachment = $request->getFile('pieceJointe');
                 if ($attachment->isValid() && !$attachment->hasMoved())
